@@ -1,0 +1,87 @@
+body{
+font-family: Arial;
+margin:0;
+background: linear-gradient(to right,#eef2ff,#e0f7fa);
+}
+
+header{
+text-align:center;
+padding:60px;
+background:#1a237e;
+color:white;
+}
+
+h2{
+text-align:center;
+color:#1a237e;
+}
+
+section{
+padding:40px;
+text-align:center;
+}
+
+.btn{
+background:#ff6f00;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.btn:hover{
+background:#e65100;
+}
+
+.logos{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.logos img{
+width:120px;
+height:120px;
+object-fit:contain;
+background:white;
+padding:10px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+footer{
+background:#1a237e;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* Registration Form */
+
+.form-container{
+width:400px;
+margin:100px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#1a237e;
+color:white;
+border:none;
+border-radius:5px;
+}

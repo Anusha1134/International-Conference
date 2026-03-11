@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Conference 2026</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+line-height:1.6;
+font-family:Arial, sans-serif;
+background-color:#cdd9f0;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1511578314322-379afb476865");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+flex-direction:column;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+margin-top:25px;
+display:flex;
+gap:20px;
+}
+
+.time-box{
+background:white;
+color:#111;
+padding:15px;
+border-radius:8px;
+text-align:center;
+width:80px;
+}
+
+/* SECTIONS */
+
+section{
+padding:60px 10%;
+background:rgba(235, 239, 241, 0.9);
+border-radius:10px;
+margin:30px 0;
+}
+
+section h2{
+text-align:center;
+margin-bottom:30px;
+color:#0f172a;
+}
+
+/* ABOUT */
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+}
+
+/* SPEAKERS */
+
+.speakers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+/* SCHEDULE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+table th, table td{
+padding:15px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+table th{
+background:#0f172a;
+color:white;
+}
+
+/* LOGO SECTION */
+
+.logos{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.logos img{
+width:120px;
+filter:grayscale(100%);
+transition:0.3s;
+}
+
+.logos img:hover{
+filter:grayscale(0);
+transform:scale(1.1);
+}
+
+/* FORM */
+
+form{
+max-width:500px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:12px 25px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>ICAI 2026</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#speakers">Speakers</a></li>
+<li><a href="#schedule">Schedule</a></li>
+<li><a href="paper.html">Paper</a></li>
+<li><a href="register.html">Register</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<h1>International Conference on Artificial Intelligence</h1>
+<p>April 15 – 17, 2026 | Chennai, India</p>
+
+<div class="countdown">
+<div class="time-box">
+<h2 id="days">0</h2>
+<p>Days</p>
+</div>
+
+<div class="time-box">
+<h2 id="hours">0</h2>
+<p>Hours</p>
+</div>
+
+<div class="time-box">
+<h2 id="minutes">0</h2>
+<p>Min</p>
+</div>
+
+<div class="time-box">
+<h2 id="seconds">0</h2>
+<p>Sec</p>
+</div>
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About the Conference</h2>
+
+<p class="about">
+ICAI 2026 brings together global researchers, academicians, and industry experts
+to share innovations in Artificial Intelligence, Machine Learning, and Data Science.
+The conference focuses on research collaboration, knowledge sharing, and future
+technology trends.
+</p>
+
+</section>
+
+<section id="speakers">
+
+<h2>Keynote Speakers</h2>
+
+<div class="speakers">
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<h3>Dr. John Smith</h3>
+<p>AI Researcher</p>
+</div>
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<h3>Dr. Sarah Lee</h3>
+<p>Machine Learning Scientist</p>
+</div>
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/65.jpg">
+<h3>Prof. David Kim</h3>
+<p>Data Science Expert</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="schedule">
+
+<h2>Conference Schedule</h2>
+
+<table>
+
+<tr>
+<th>Day</th>
+<th>Session</th>
+<th>Speaker</th>
+</tr>
+
+<tr>
+<td>Day 1</td>
+<td>AI in Healthcare</td>
+<td>Dr. John Smith</td>
+</tr>
+
+<tr>
+<td>Day 2</td>
+<td>Deep Learning Advances</td>
+<td>Dr. Sarah Lee</td>
+</tr>
+
+<tr>
+<td>Day 3</td>
+<td>Future of AI</td>
+<td>Prof. David Kim</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>Our Partners & Universities</h2>
+
+<div class="logos">
+
+<img src="kings.jpg">
+<img src="iitm.jpg">
+<img src="annauni.png">
+<img src="vit.jpg">
+
+</div>
+
+</section>
+
+
+
+<footer>
+<p>© 2026 Anusha | All Rights Reserved</p>
+</footer>
+
+<script>
+
+/* COUNTDOWN TIMER */
+
+const conferenceDate = new Date("April 15, 2026 09:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = conferenceDate - now;
+
+const days = Math.floor(distance / (1000*60*60*24));
+const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+</script>
+
+</body>
+</html>
+

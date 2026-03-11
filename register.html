@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conference Registration</title>
+
+<style>
+
+/* SAME CSS */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+line-height:1.6;
+background-color:#cdd9f0;
+}
+
+nav{
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:30px;
+color:#0f172a;
+}
+
+form{
+max-width:500px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:12px 25px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>ICAI 2026</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="paper.html">Paper</a></li>
+<li><a href="register.html">Register</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h2>Conference Registration</h2>
+
+<form onsubmit="return registerUser()">
+
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Institution / University">
+
+<button type="submit">Register</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Anusha | All Rights Reserved</p>
+</footer>
+
+<script>
+
+function registerUser(){
+alert("Registration Successful!");
+return false;
+}
+
+</script>
+
+</body>
+</html>
